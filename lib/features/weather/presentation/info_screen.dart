@@ -1,11 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:weather_app/features/weather/data/models/weather_model.dart';
-import 'package:weather_app/features/weather/presentation/helpers/theme_helper.dart';
 
 import 'package:weather_app/features/weather/presentation/widgets/weather_logo.dart';
 import 'package:weather_app/features/weather/presentation/widgets/widgets_info/common_container.dart';
 import 'package:weather_app/features/weather/presentation/widgets/widgets_info/common_info_screen.dart';
+import 'package:weather_app/internal/helpers/theme_helper.dart';
 
 class InfoScreen extends StatefulWidget {
   final WeatherModel weatherModel;

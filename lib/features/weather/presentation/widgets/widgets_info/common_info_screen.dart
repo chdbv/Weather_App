@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/features/weather/data/models/weather_model.dart';
-import 'package:weather_app/features/weather/presentation/helpers/text_helper.dart';
+import 'package:weather_app/internal/helpers/text_helper.dart';
 import 'package:weather_app/internal/helpers/utils.dart';
 
 class CommonInfoScreen extends StatelessWidget {

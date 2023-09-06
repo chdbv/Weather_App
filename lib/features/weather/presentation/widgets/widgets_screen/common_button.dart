@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/features/weather/presentation/helpers/text_helper.dart';
-import 'package:weather_app/features/weather/presentation/helpers/theme_helper.dart';
 import 'package:weather_app/features/weather/presentation/logic/bloc/weather_bloc.dart';
+import 'package:weather_app/internal/helpers/text_helper.dart';
+import 'package:weather_app/internal/helpers/theme_helper.dart';
 
 class CommonButton extends StatelessWidget {
   const CommonButton({

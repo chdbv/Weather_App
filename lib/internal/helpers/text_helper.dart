@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/features/weather/presentation/helpers/theme_helper.dart';
+import 'package:weather_app/internal/helpers/theme_helper.dart';
 
 class TextHelper {
   static TextStyle style30 = TextStyle(

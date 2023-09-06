@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/features/weather/presentation/helpers/theme_helper.dart';
+import 'package:weather_app/internal/helpers/theme_helper.dart';
 
 class CommonTextField extends StatelessWidget {
   const CommonTextField({Key? key, required this.controller}) : super(key: key);

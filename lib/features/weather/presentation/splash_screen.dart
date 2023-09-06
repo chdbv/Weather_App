@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/features/weather/presentation/helpers/theme_helper.dart';
 import 'package:weather_app/features/weather/presentation/search_screen.dart';
+import 'package:weather_app/internal/helpers/theme_helper.dart';
 
 class SplashScreen extends StatefulWidget {
   @override

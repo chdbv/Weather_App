@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/features/weather/presentation/helpers/text_helper.dart';
+import 'package:weather_app/internal/helpers/text_helper.dart';
 
 class WeatherLogo extends StatelessWidget {
   const WeatherLogo({
