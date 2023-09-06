@@ -7,19 +7,19 @@ import 'package:weather_app/features/weather/presentation/widgets/weather_logo.d
 import 'package:weather_app/features/weather/presentation/widgets/widgets_info/common_container.dart';
 import 'package:weather_app/features/weather/presentation/widgets/widgets_info/common_info_screen.dart';
 
-class WeatherInfoScreen extends StatefulWidget {
+class InfoScreen extends StatefulWidget {
   final WeatherModel weatherModel;
 
-  const WeatherInfoScreen({
+  const InfoScreen({
     Key? key,
     required this.weatherModel,
   }) : super(key: key);
 
   @override
-  State<WeatherInfoScreen> createState() => _WeatherInfoScreenState();
+  State<InfoScreen> createState() => _InfoScreenState();
 }
 
-class _WeatherInfoScreenState extends State<WeatherInfoScreen> {
+class _InfoScreenState extends State<InfoScreen> {
   // Future<void> _refreshWeather() async {
 
   //   await Future.delayed(Duration(seconds: 2));
@@ -59,7 +59,7 @@ class _WeatherInfoScreenState extends State<WeatherInfoScreen> {
 
   Widget buildBackgroundImages() {
     return Image.asset(
-      'assets/images/Background.png',
+      'assets/images/background.png',
       fit: BoxFit.cover,
       width: double.infinity,
       height: double.infinity,
@@ -73,7 +73,7 @@ class _WeatherInfoScreenState extends State<WeatherInfoScreen> {
       right: 20,
       bottom: MediaQuery.of(context).size.height / 1.8,
       child: Image.asset(
-        'assets/images/Weathe.png',
+        'assets/images/weathe.png',
         fit: BoxFit.cover,
       ),
     );
@@ -93,7 +93,11 @@ class _WeatherInfoScreenState extends State<WeatherInfoScreen> {
             return const CircularProgressIndicator();
           },
           errorWidget: (context, url, error) {
-            return Icon(Icons.error, size: 40, color: ThemeHelper.primaryBlack);
+            return Icon(
+              Icons.error,
+              size: 40,
+              color: ThemeHelper.primaryBlack,
+            );
           },
         ),
       ),
@@ -109,3 +113,6 @@ class _WeatherInfoScreenState extends State<WeatherInfoScreen> {
     );
   }
 }
+
+
+//test

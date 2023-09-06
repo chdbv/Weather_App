@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weather_app/features/weather/presentation/helpers/theme_helper.dart';
 
 class CommonTextField extends StatelessWidget {
-  const CommonTextField({
-    Key? key,
-    required this.controller,
-  }) : super(key: key);
+  const CommonTextField({Key? key, required this.controller}) : super(key: key);
 
   final TextEditingController controller;
 
@@ -16,8 +13,12 @@ class CommonTextField extends StatelessWidget {
       decoration: InputDecoration(
         labelText: 'Введите город',
         hintText: 'Например, Москва',
-        labelStyle: TextStyle(color: ThemeHelper.primaryWhite),
-        hintStyle: TextStyle(color: ThemeHelper.primaryWhite),
+        labelStyle: TextStyle(
+          color: ThemeHelper.primaryWhite,
+        ),
+        hintStyle: TextStyle(
+          color: ThemeHelper.primaryWhite,
+        ),
         border: InputBorder.none,
         prefixIcon: PopupMenuButton<String>(
           icon: Icon(

@@ -12,10 +12,13 @@ class WeatherLogo extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset(
-          'assets/images/Vector.png',
+          'assets/images/vector.png',
           width: 50,
         ),
-        Text('WeatherApp', style: TextHelper.style24),
+        Text(
+          'WeatherApp',
+          style: TextHelper.style24,
+        ),
       ],
     );
   }

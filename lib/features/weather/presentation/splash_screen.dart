@@ -26,14 +26,18 @@ class _SplashScreenState extends State<SplashScreen>
           Navigator.of(context).pushReplacement(
             PageRouteBuilder(
               pageBuilder: (context, animation, secondaryAnimation) =>
-                  SearchScreen(),
+                  const SearchScreen(),
               transitionsBuilder:
                   (context, animation, secondaryAnimation, child) {
                 const begin = Offset(1.0, 0.0);
                 const end = Offset.zero;
                 const curve = Curves.easeInOut;
-                var tween = Tween(begin: begin, end: end)
-                    .chain(CurveTween(curve: curve));
+                var tween = Tween(
+                  begin: begin,
+                  end: end,
+                ).chain(
+                  CurveTween(curve: curve),
+                );
                 var offsetAnimation = animation.drive(tween);
                 return SlideTransition(
                   position: offsetAnimation,
@@ -64,7 +68,7 @@ class _SplashScreenState extends State<SplashScreen>
           child: FadeTransition(
             opacity: _animationController,
             child: Image.asset(
-              "assets/images/Vector.png",
+              "assets/images/vector.png",
             ),
           ),
         ),

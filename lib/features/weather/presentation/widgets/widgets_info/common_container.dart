@@ -53,31 +53,43 @@ class CommonContainer extends StatelessWidget {
         child: Column(
           children: [
             _buildInfoRow(
-              'assets/icons/Icons1.png',
+              'assets/icons/icons1.png',
               'Температура',
               tempConverter(weatherModel.main?.temp ?? 0),
             ),
-            Divider(height: 32.0, color: ThemeHelper.primaryDivider),
+            Divider(
+              height: 32.0,
+              color: ThemeHelper.primaryDivider,
+            ),
             _buildInfoRow(
-              'assets/icons/Icons2.png',
+              'assets/icons/icons2.png',
               'Осадки',
               '${weatherModel.clouds?.all ?? 0}%',
             ),
-            Divider(height: 32.0, color: ThemeHelper.primaryDivider),
+            Divider(
+              height: 32.0,
+              color: ThemeHelper.primaryDivider,
+            ),
             _buildInfoRow(
-              'assets/icons/Icons3.png',
+              'assets/icons/icons3.png',
               'Ветер',
               '${weatherModel.wind?.speed?.toString() ?? ''}к/ч',
             ),
-            Divider(height: 32.0, color: ThemeHelper.primaryDivider),
+            Divider(
+              height: 32.0,
+              color: ThemeHelper.primaryDivider,
+            ),
             _buildInfoRow(
-              'assets/icons/Icons4.png',
+              'assets/icons/icons4.png',
               'Влажность',
               '${weatherModel.main?.humidity?.toString() ?? ''}%',
             ),
-            Divider(height: 32.0, color: ThemeHelper.primaryDivider),
+            Divider(
+              height: 32.0,
+              color: ThemeHelper.primaryDivider,
+            ),
             _buildInfoRow(
-              'assets/icons/Icons5.png',
+              'assets/icons/icons5.png',
               'Тепло',
               tempConverter(weatherModel.main?.tempMax ?? 0),
             ),

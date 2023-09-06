@@ -6,7 +6,7 @@ import 'package:weather_app/features/weather/domain/use_cases/weather_use_case.d
 import 'package:weather_app/features/weather/presentation/helpers/text_helper.dart';
 import 'package:weather_app/features/weather/presentation/helpers/theme_helper.dart';
 import 'package:weather_app/features/weather/presentation/logic/bloc/weather_bloc.dart';
-import 'package:weather_app/features/weather/presentation/weather_info_screen.dart';
+import 'package:weather_app/features/weather/presentation/info_screen.dart';
 import 'package:weather_app/features/weather/presentation/widgets/weather_logo.dart';
 import 'package:weather_app/features/weather/presentation/widgets/widgets_screen/common_button.dart';
 import 'package:weather_app/features/weather/presentation/widgets/widgets_screen/common_textfield.dart';
@@ -29,7 +29,7 @@ class SearchScreen extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            'assets/images/Background.png',
+            'assets/images/background.png',
             fit: BoxFit.cover,
           ),
           const Padding(
@@ -67,8 +67,11 @@ class SearchScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Text('Выберите место, чтобы просмотреть прогноз погоды.',
-                      textAlign: TextAlign.center, style: TextHelper.span14),
+                  Text(
+                    'Выберите место, чтобы просмотреть прогноз погоды.',
+                    textAlign: TextAlign.center,
+                    style: TextHelper.span14,
+                  ),
                   const SizedBox(height: 35),
                   Container(
                     height: 56.0,
@@ -82,8 +85,10 @@ class SearchScreen extends StatelessWidget {
                           child: CommonTextField(controller: controller),
                         ),
                         IconButton(
-                          icon: Icon(Icons.clear,
-                              color: ThemeHelper.primaryWhite),
+                          icon: Icon(
+                            Icons.clear,
+                            color: ThemeHelper.primaryWhite,
+                          ),
                           onPressed: () {
                             controller.clear();
                           },
@@ -117,7 +122,7 @@ class SearchScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => WeatherInfoScreen(
+                            builder: (context) => InfoScreen(
                               weatherModel: state.weatherModel,
                             ),
                           ),
@@ -130,7 +135,9 @@ class SearchScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: CommonButton(
-                          weatherBloc: weatherBloc, controller: controller),
+                        weatherBloc: weatherBloc,
+                        controller: controller,
+                      ),
                     ),
                   )
                 ],

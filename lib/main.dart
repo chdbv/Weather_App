@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
-import 'package:weather_app/features/splash_screen.dart';
+import 'package:weather_app/features/weather/presentation/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
