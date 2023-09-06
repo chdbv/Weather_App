@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/features/weather/data/models/weather_model.dart';
-import 'package:weather_app/features/weather/presentation/widgets/info_widgets/common_top_image.dart';
+import 'package:weather_app/features/weather/presentation/widgets/weather_info_widgets/common_top_image.dart';
 import 'package:weather_app/internal/helpers/commons/common_background.dart';
 import 'package:weather_app/internal/helpers/commons/common_image.dart';
 
 import 'package:weather_app/internal/helpers/commons/weather_logo.dart';
-import 'package:weather_app/features/weather/presentation/widgets/info_widgets/common_container.dart';
-import 'package:weather_app/features/weather/presentation/widgets/info_widgets/common_info_screen.dart';
+import 'package:weather_app/features/weather/presentation/widgets/weather_info_widgets/common_container.dart';
+import 'package:weather_app/features/weather/presentation/widgets/weather_info_widgets/common_info_screen.dart';
 
 class WeatherInfoScreen extends StatefulWidget {
   final WeatherModel weatherModel;

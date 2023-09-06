@@ -8,8 +8,8 @@ import 'package:weather_app/internal/helpers/theme_helper.dart';
 import 'package:weather_app/features/weather/presentation/logic/bloc/weather_bloc.dart';
 import 'package:weather_app/features/weather/presentation/weather_info_screen.dart';
 import 'package:weather_app/internal/helpers/commons/weather_logo.dart';
-import 'package:weather_app/features/weather/presentation/widgets/search_widgets/common_button.dart';
-import 'package:weather_app/features/weather/presentation/widgets/search_widgets/common_textfield.dart';
+import 'package:weather_app/features/weather/presentation/widgets/weather_search_widgets/common_button.dart';
+import 'package:weather_app/features/weather/presentation/widgets/weather_search_widgets/common_textfield.dart';
 
 class WeatherSearchScreen extends StatelessWidget {
   const WeatherSearchScreen({super.key});
