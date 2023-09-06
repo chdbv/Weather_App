@@ -6,13 +6,13 @@ import 'package:weather_app/features/weather/domain/use_cases/weather_use_case.d
 import 'package:weather_app/internal/helpers/text_helper.dart';
 import 'package:weather_app/internal/helpers/theme_helper.dart';
 import 'package:weather_app/features/weather/presentation/logic/bloc/weather_bloc.dart';
-import 'package:weather_app/features/weather/presentation/info_screen.dart';
-import 'package:weather_app/features/weather/presentation/widgets/weather_logo.dart';
-import 'package:weather_app/features/weather/presentation/widgets/widgets_screen/common_button.dart';
-import 'package:weather_app/features/weather/presentation/widgets/widgets_screen/common_textfield.dart';
+import 'package:weather_app/features/weather/presentation/weather_info_screen.dart';
+import 'package:weather_app/internal/helpers/commons/weather_logo.dart';
+import 'package:weather_app/features/weather/presentation/widgets/search_widgets/common_button.dart';
+import 'package:weather_app/features/weather/presentation/widgets/search_widgets/common_textfield.dart';
 
-class SearchScreen extends StatelessWidget {
-  const SearchScreen({Key? key});
+class WeatherSearchScreen extends StatelessWidget {
+  const WeatherSearchScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -122,7 +122,7 @@ class SearchScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => InfoScreen(
+                            builder: (context) => WeatherInfoScreen(
                               weatherModel: state.weatherModel,
                             ),
                           ),

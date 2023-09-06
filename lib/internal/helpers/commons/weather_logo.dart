@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weather_app/internal/helpers/text_helper.dart';
 
 class WeatherLogo extends StatelessWidget {
-  const WeatherLogo({
-    super.key,
-  });
+  const WeatherLogo({super.key});
 
   @override
   Widget build(BuildContext context) {

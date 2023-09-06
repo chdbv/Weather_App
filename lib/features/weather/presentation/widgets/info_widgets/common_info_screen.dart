@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/features/weather/data/models/weather_model.dart';
 import 'package:weather_app/internal/helpers/text_helper.dart';
+import 'package:weather_app/internal/helpers/theme_helper.dart';
 import 'package:weather_app/internal/helpers/utils.dart';
 
 class CommonInfoScreen extends StatelessWidget {
+  final WeatherModel weatherModel;
+
   const CommonInfoScreen({
-    Key? key,
+    super.key,
     required this.weatherModel,
   });
-
-  final WeatherModel weatherModel;
 
   @override
   Widget build(BuildContext context) {
@@ -34,13 +35,13 @@ class CommonInfoScreen extends StatelessWidget {
           ),
           Row(
             children: [
-              Text(
-                '${tempConverter(weatherModel.main?.tempMax ?? 0)} / ${tempConverter(weatherModel.main?.tempMin ?? 0)}',
-                style: TextHelper.style17,
+              Image.asset(
+                'assets/icons/icons1.png',
+                width: 25,
+                color: ThemeHelper.primaryWhite,
               ),
-              const SizedBox(width: 10),
               Text(
-                '${weatherModel.main?.feelsLike ?? 0}',
+                'min: ${tempConverter(weatherModel.main?.tempMax ?? 0)} / max:  ${tempConverter(weatherModel.main?.tempMin ?? 0)}',
                 style: TextHelper.style17,
               ),
             ],

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/features/weather/presentation/search_screen.dart';
+import 'package:weather_app/features/weather/presentation/weather_search_screen.dart';
 import 'package:weather_app/internal/helpers/theme_helper.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen>
           Navigator.of(context).pushReplacement(
             PageRouteBuilder(
               pageBuilder: (context, animation, secondaryAnimation) =>
-                  const SearchScreen(),
+                  const WeatherSearchScreen(),
               transitionsBuilder:
                   (context, animation, secondaryAnimation, child) {
                 const begin = Offset(1.0, 0.0);
@@ -35,9 +35,7 @@ class _SplashScreenState extends State<SplashScreen>
                 var tween = Tween(
                   begin: begin,
                   end: end,
-                ).chain(
-                  CurveTween(curve: curve),
-                );
+                ).chain(CurveTween(curve: curve));
                 var offsetAnimation = animation.drive(tween);
                 return SlideTransition(
                   position: offsetAnimation,
