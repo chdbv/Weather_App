@@ -10,9 +10,6 @@ String dateConverter(int date) {
   return DateFormat('dd.MM.yyyy  hh:mm:ss').format(convertedDate);
 }
 
-
-
-
 String imageHelper(String description) {
   switch (description) {
     case 'clear sky':
@@ -20,8 +17,6 @@ String imageHelper(String description) {
 
     case 'few clouds':
       return 'assets/images/clouds.png';
-
-      
 
     default:
       return 'assets/images/bg_image.jpeg';
