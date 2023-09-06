@@ -114,5 +114,3 @@ class _InfoScreenState extends State<InfoScreen> {
   }
 }
 
-
-//test

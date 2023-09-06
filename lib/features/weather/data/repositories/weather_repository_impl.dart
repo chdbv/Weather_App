@@ -15,7 +15,7 @@ class WeatherRepositoryImpl implements WeatherRepository {
         queryParams: {
           'q': value,
           'appid': 'd0617a5c2dca461ecff826af2453a679',
-          // 'lang': 'ru',
+          'lang': 'ru',
         },
       );
 
